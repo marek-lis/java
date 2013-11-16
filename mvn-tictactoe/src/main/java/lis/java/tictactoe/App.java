@@ -31,6 +31,6 @@ public class App
     {
 		model = new AppModel();
 		controller = new AppController(model);
-        view = new AppView(model, controller);
+		view = new AppView(model, controller);
     }
 }

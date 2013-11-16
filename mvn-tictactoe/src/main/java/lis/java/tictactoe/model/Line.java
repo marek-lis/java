@@ -8,9 +8,9 @@ public class Line {
 
 	public Position first;
 	public Position last;
-	public int token;
+	public Token token;
 	
-	public Line(Position first, Position last, int token) {
+	public Line(Position first, Position last, Token token) {
 		this.first = first;
 		this.last = last;
 		this.token = token;
