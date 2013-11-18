@@ -1,19 +1,31 @@
 package lis.java.tictactoe.model;
 
 /**
- * Tic Tac Toe token line.
+ * Tic Tac Toe Token Line.
  * Marek Lis
  */
 public class Line {
 
-	public Position first;
-	public Position last;
-	public Token token;
+	private Position _first;
+	private Position _last;
+	private EToken _token;
 	
-	public Line(Position first, Position last, Token token) {
-		this.first = first;
-		this.last = last;
-		this.token = token;
+	public Line(Position first, Position last, EToken token) {
+		_first = first;
+		_last = last;
+		_token = token;
+	}
+	
+	public Position getFirst() {
+		return _first;
+	}
+	
+	public Position getLast() {
+		return _last;
+	}
+	
+	public EToken getToken() {
+		return _token;
 	}
 	
 }
